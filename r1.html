@@ -1,0 +1,240 @@
+<html>
+<head>
+<title>table</title>
+<link rel="icon" type="image/gif" href="mmv.gif">
+<style>
+body {
+	background-image:url('b2.jpg');
+	}
+	span {
+	color:red;
+}
+input[type="submit"] {
+	padding:5px;
+	width:20%;
+	font-size:20px;
+	}	
+	</style>
+</head>
+<center>
+<h1>HOSTEL REGISTRATION FORM </h1>
+</center>
+<body >
+
+<table border="0" width="100%" height="50%">
+
+
+
+<form enctype="multipart/form-data" method="post" action="nuser1.php">
+<tr>
+<td>
+    
+	<fieldset>
+	<legend>
+	<h2>Personal Detail</h2>
+	</legend>
+	<table width="75%" cellpadding="5" cellspacing= "5">
+	<br/>
+     <tr>
+	 <td>UET ROLL NO : </td>
+	 <td><input type="text" name="uet_rno" size="15" maxlength="25" required " /><span>*</span> [ENTER NUMERIC VALUE]</td>
+	 </tr>
+	 <tr>
+	 <td>UET INDEX(FOR FIRST YEAR STUDENTS)<br/>/CGPA OF PREVIOUS YEAR(FOR SECOND AND THIRD YEAR STUDENTS): </td>
+	 <td><input type="text" name="uet_index" size="5" maxlength="25" required /><span>*</span> [ENTER NUMERIC VALUE]</td>
+	 </tr>
+	 <tr>
+	 <td>Student Name : </td>
+	 <td><input type="text" name="sname" size="35" maxlength="25" required /><span>*</span> [ONLY ALPHABETS ALLOWED]</td>
+	 </tr>
+	 <tr>
+	 <td>Father's Name : </td>
+	 <td><input type="text" name="fname" size="35" maxlength="25" required / /><span>*</span> [ONLY ALPHABETS ALLOWED]</td>
+	 </tr>
+	 <tr>
+	 <td>Mother's Name : </td>
+	 <td><input type="text" name="mname" size="35" maxlength="25" required / /><span>*</span> [ONLY ALPHABETS ALLOWED]</td>
+	 </tr>
+	 
+	 <tr>
+	 <td>DOB : </td>
+	 <td><input  type="text" id="dob" name="dob" size="15" maxlength="15" required /><span>*</span>    (PLEASE ENTER DOB IN YYYY/MM/DD FORMAT)</td>
+	 </tr>
+	 
+	 <tr>
+	 <td>XII Percentage (FOR FIRST YEAR STUDENTS)<br/>/UET_INDEX(FOR SECOND AND THIRD YEAR STUDENTS): </td>
+	 <td><input type="text" name="percentage" size="5" maxlength="25" required /><span>*</span> [ENTER NUMERIC VALUE]</td>
+	 </tr>
+	 <tr>
+	 
+	 <tr>
+	 <td>Category : </td>
+	 <td><select name="category" id="category">
+	 	<option value="-">-</option>
+	 <option value="GEN">GEN</option>
+	<option value="OBC">OBC</option>
+	<option value="SC">SC</option>
+	<option value="ST">ST</option>
+	</select>
+    </td>
+	 </tr>
+	 
+	 <tr>
+	 <td>PH : </td>
+	 <td><select name="ph" id="ph">
+	 	<option value="-">-</option>
+	 <option value="YES">YES</option>
+	<option value="NO">NO</option>
+	</select>
+    </td>
+	 </tr>
+	 <tr>
+	 <td>Course : </td>
+	 <td><select name="course" id="course">
+	     <option>-</option>
+		 <option>B.Sc(Bio)</option>
+		 <option>B.Sc(Maths)</option>
+		 <option>B.A(Arts)</option>
+		 <option>B.A(Soc.)</option>
+		 </select>
+		 </td></tr>
+		 <tr>
+		 <td>Year :</td>
+		 <td><select name="year" id="year">
+	     <option>-</option>
+		 <option>1st yr</option>
+		 <option>2nd yr</option>
+		 <option>3rd yr</option>
+		 </select></td>
+		 </tr>
+	 
+	 </table>
+	 <p>
+	 </p>
+	<br/>
+	</fieldset>
+	<fieldset>
+   <legend>
+   <h2>Contact Detail</h2>
+   </legend>
+   <h3><b>Permanent Address</b></h3>
+<table width="80%" >
+     <tr>
+	 <td>Address :  </td>
+	 <td><input type="text" name="p_address1" id="p_address1" size="60"  required ></td>
+	 </tr>
+	 
+	 <tr>
+	 <td>  </td>
+	 <td><input type="text" name="p_address2" id="p_address2" size="60" ></td>
+	 </tr>
+	 <tr>
+	 <td>City : </td>
+	 <td><input type="text" name="p_city" id="p_city" size="15" maxlength="15" required / /></td>
+	 
+	 <td>State : </td>
+	 <td><input type="text" name="p_state" id="p_state" size="15" maxlength="15" required / /></td>
+	 </tr>
+	 <tr>
+	 <td>Pincode : </td>
+	 <td><input type="text" name="p_pincode" id="p_pincode" size="10" maxlength="10" required /></td>
+	 
+	 <td>Mobile No : </td>
+	 <td><input type="text" name="p_mobileno" id="p_mobileno" size="15" maxlength="15" /></td>
+	 </tr>
+	 <tr>
+	 <td>Distance (in KM ): </td>
+	 <td><input type="text" name="distance" id="distance" size="10" maxlength="20" required />(approx.)</td>
+	 
+	 </tr>
+	 </table>
+	 
+	 <h3><b>Correspondence Address</b></h3>
+	 <table width="80%" >
+	 
+	 <tr>
+	 <td>Address :  </td>
+	 <td><input type="text" name="c_address1" id="c_address1" size="60" required  ></td>
+	 </tr>
+	 
+	 <tr>
+	 <td>  </td>
+	 <td><input type="text" name="c_address2" id="c_address2" size="60" ></td>
+	 </tr>
+	 <tr>
+	 <td>City : </td>
+	 <td><input type="text" name="c_city" id="c_city" size="15" maxlength="15" required  /></td>
+	 
+	 <td>State : </td>
+	 <td><input type="text" name="c_state" id="c_state" size="15" maxlength="15" required  /></td>
+	 </tr>
+	 <tr>
+	 <td>Pincode : </td>
+	 <td><input type="text" name="c_pincode" id="c_pincode" size="10" maxlength="10" required /></td>
+	 
+	 <td>Mobile No : </td>
+	 <td><input type="text" name="c_mobileno" id="c_mobileno" size="15" maxlength="15" required /></td>
+	 </tr>
+     <tr>
+	 <td>Email : </td>
+	 <td><input type="text" name="email" id="email" size="40" maxlength="40"/></td>
+	 </tr>
+	
+	 </table>
+	 
+
+
+<h3><b>Local Guardian Address</b></h3>
+	 <table width="80%" >
+     <tr>
+	 <tr>
+	 <td>Address :  </td>
+	 <td><input type="text" name="lg_address1" id="lg_address1" size="60" ></td>
+	 </tr>
+	 
+	 <tr>
+	 <td>  </td>
+	 <td><input type="text" name="lg_address2" id="lg_address2" size="60" ></td>
+	 </tr>
+	 
+	 <td>Mobile No : </td>
+	 <td><input type="text" name="lg_mobileno" id="lg_mobileno" size="15" maxlength="10"/></td>
+	 </tr> 
+	 <table>
+	 </fieldset>
+
+<br/>
+<p>
+</p>
+<fieldset>
+   <legend>
+   <h2>Profile Detail</h2>
+   </legend>
+Username : <input type="text" name="username" placeholder="username" required / > [ALPHABETS AND NUMERIC VALUES ARE ALLOWED]
+<br/><br/>
+Password : <input type="password" name="password" placeholder="********" required />
+<br/><br/>
+Confirm Password : <input type="password" name="cpassword" placeholder="********" required />
+<br/>
+	 
+<table>	
+<tr>
+<td>Image:</td>
+<td><input type="file" name="image1"/></td>
+</tr>
+
+
+</table>
+
+</fieldset>
+<b>
+<i>
+KINDLY VERIFY ALL THE DETAILS BEFORE SUBMITTING.ONCE SUBMITTED DETAILS CANNOT BE EDITED WITHOUT ADMIN'S PERMISSION.</i></b>
+<br/>
+	 <center><input type="submit" name="submit" value="submit"></center>
+	
+</form>	 
+
+</body>
+</html>
+
